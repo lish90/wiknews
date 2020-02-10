@@ -1,2 +1,12 @@
 
 <h1>coding<h1>
+
+
+
+<% @articles.each do |article| %>
+    <div class="boxes">
+    <h2><%= link_to "#{article.title}", article_path(article), class: "my-link"%></h2>
+      <p><%= article.content %></p>
+    </div>
+  <% end %>
+ 
